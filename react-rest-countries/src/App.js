@@ -1,17 +1,20 @@
 // import logo from './logo.svg';
 // import {useState,useEffect} from 'react';
 import './App.css';
-import Countries from './components/Country/Countries';
-import Header from './components/Header/Header';
-import Person from './components/Person/Person';
+import Countries from './components/Countries/Countries';
+// import Countries from './components/Country/Countries';
+// import Header from './components/Header/Header';
+// import Person from './components/Person/Person';
 
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      {/* <Header></Header>
       <Countries></Countries>
-      <Person></Person>
+      <Person></Person> */}
+
+      <Countries></Countries>
     </div>
   );
 }
