@@ -22,8 +22,20 @@ fetch(`https://restcountries.com/v3.1/all`)
     <div>
       <h1>Visiting countries</h1>
       <h3>Available :{countries.length}</h3>
+      {
+        countries.map(country=><Country name={country.name.common}
+       population={country.population} ></Country>)
+      }
     </div>
   )
 }
 
+function Country(props){
+  return(
+    <div>
+      <h2>Name:{props.name}</h2>
+      <h4> Population:{props.population}</h4>
+    </div>
+  )
+}
 export default App;
