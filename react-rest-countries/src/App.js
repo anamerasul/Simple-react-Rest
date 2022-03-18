@@ -2,6 +2,7 @@
 // import {useState,useEffect} from 'react';
 import './App.css';
 import Countries from './components/Countries/Countries';
+import Footer from './components/Footer/Footer';
 // import Countries from './components/Country/Countries';
 // import Header from './components/Header/Header';
 // import Person from './components/Person/Person';
@@ -15,6 +16,7 @@ function App() {
       <Person></Person> */}
 
       <Countries></Countries>
+      <Footer></Footer>
     </div>
   );
 }
