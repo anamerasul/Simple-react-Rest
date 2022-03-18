@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Countries.css'
 import {useState,useEffect} from 'react';
 import Country from '../Country/Country';
 
@@ -13,19 +13,23 @@ const Countries = () => {
   }, [])
   
     return(
+    <div>
       <div>
         <h1>Visiting countries</h1>
         <h3>Available :{countries.length}</h3>
-        {
-          countries.map(country=>
-          
+      </div>
+      <div className="countries-container">
+      {
+          countries.map(country=> 
         <Country 
          country={country}
+         key={country.cca3}
          ></Country>
          
          )
         }
-      </div>
+      </div>  
+    </div>
       
     
     );
