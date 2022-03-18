@@ -15,8 +15,8 @@ const Countries = () => {
     return(
     <div>
       <div>
-        <h1>Visiting countries</h1>
-        <h3>Available :{countries.length}</h3>
+        <h3>Visiting countries</h3>
+        <h5>Available :{countries.length}</h5>
       </div>
       <div className="countries-container">
       {
